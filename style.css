@@ -483,14 +483,20 @@ body {
 
 /* Company hero headline */
 .company-hero-title {
-  font-size: clamp(26px, 3vw, 44px);
+  font-size: clamp(26px, 2.8vw, 42px);
   font-weight: 600;
   letter-spacing: -0.005em;
-  line-height: 1.2;
+  line-height: 1.25;
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica,
     Arial, sans-serif;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
+  max-width: 980px;   
+}
+@media (min-width: 1400px) {
+  .company-hero-title {
+    font-size: 44px;
+  }
 }
 
 /* Centered reading column */
